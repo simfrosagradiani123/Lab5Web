@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Switch untuk Seleksi Kondisi</title>
+    <script>
+        function seleksiSwitch() {
+            var val1 = prompt("Input nilai (1-5):");
+            var output;
+            switch (val1) {
+                case "1": output = "Bilangan Satu"; break;
+                case "2": output = "Bilangan Dua"; break;
+                case "3": output = "Bilangan Tiga"; break;
+                case "4": output = "Bilangan Empat"; break;
+                case "5": output = "Bilangan Lima"; break;
+                default: output = "Bilangan Lainnya";
+            }
+            alert(output);
+        }
+    </script>
+</head>
+<body>
+    <h1>Switch untuk Seleksi Kondisi</h1>
+    <button onclick="seleksiSwitch()">Cek Bilangan</button>
+</body>
+</html>

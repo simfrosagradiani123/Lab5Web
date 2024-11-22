@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Input</title>
+    <script>
+        function cekBilangan() {
+            var val1 = document.forms["kirim"].elements["T1"].value;
+            document.forms["kirim"].elements["T2"].value = (val1 % 2 == 0) ? "Bilangan Genap" : "Bilangan Ganjil";
+        }
+    </script>
+</head>
+<body>
+    <h1>Form Input Bilangan</h1>
+    <form name="kirim" method="POST">
+        <label>BIL <input type="text" name="T1" size="20"></label>
+        <label>MERUPAKAN BIL <input type="text" name="T2" size="20" readonly></label>
+        <button type="button" onclick="cekBilangan()">Tebak</button>
+    </form>
+</body>
+</html>
+

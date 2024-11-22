@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Button</title>
+    <script>
+        function helloWorld() {
+            console.log("Hello World");
+        }
+
+        function showAlert() {
+            alert("Ini merupakan pesan untuk Anda.");
+        }
+
+        function cobaMenulis() {
+            console.log("Selamat mencoba JavaScript. Semoga sukses!");
+        }
+
+        function tanyaNama() {
+            var nama = prompt("Siapa nama Anda?", "Masukkan nama Anda");
+            console.log("Hai, " + (nama || "Pengguna"));
+        }
+    </script>
+</head>
+<body>
+    <h1>Form Button</h1>
+    <button onclick="helloWorld()">Tampilkan Hello World</button>
+    <button onclick="showAlert()">Tampilkan Alert</button>
+    <button onclick="cobaMenulis()">Tampilkan Pesan</button>
+    <button onclick="tanyaNama()">Tanya Nama</button>
+</body>
+</html>

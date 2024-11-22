@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML DOM</title>
+    <script>
+        function displayMessage(message) {
+            const messageContainer = document.getElementById("messages");
+            const newMessage = document.createElement("div");
+            newMessage.textContent = message;
+            messageContainer.appendChild(newMessage);
+        }
+
+        function helloWorld() {
+            displayMessage("Hello World");
+        }
+    </script>
+</head>
+<body>
+    <h1>Manipulasi HTML DOM</h1>
+    <div id="messages"></div>
+    <button onclick="helloWorld()">Tampilkan Hello World</button>
+</body>
+</html>
